@@ -1,0 +1,289 @@
+:root {
+  --primary-color: #002244;
+  --secondary-color: #004488;
+  --accent-color: #00ccff;
+  --text-color: #ffffff;
+  --bg-light: #f5f5f5;
+  --shadow: rgba(0, 0, 0, 0.1);
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: var(--bg-light);
+  color: #333;
+}
+
+/* ---- NAVBAR STYLING ---- */
+.custom-navbar {
+  background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+  padding: 20px 0px; /* Increased padding for wider appearance */
+  border-bottom: 2px solid var(--accent-color);
+  width: 100%; /* Takes up full width of the container */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+  font-size: 24px;
+  font-weight: bold;
+  color: var(--text-color);
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 10px auto;
+}
+
+.navbar-brand:hover {
+  color: var(--accent-color);
+}
+
+.navbar-nav .nav-link {
+  color: var(--text-color);
+  font-size: 18px;
+  font-weight: 500;
+  margin-right: 20px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+  color: var(--accent-color);
+  text-decoration: underline;
+}
+
+.profile-btn {
+  border: 1px solid var(--text-color);
+  color: var(--text-color);
+  background-color: transparent;
+  padding: 8px 15px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.profile-btn:hover {
+  background-color: var(--accent-color);
+  border-color: var(--accent-color);
+  color: #fff;
+}
+
+.logout-btn {
+  border: 1px solid var(--text-color);
+  color: var(--text-color);
+  background-color: transparent;
+  padding: 8px 15px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 10px; /* Adds spacing between buttons */
+  transition: all 0.3s ease;
+}
+
+.logout-btn:hover {
+  background-color: var(--accent-color);
+  border-color: var(--accent-color);
+  color: #3dc6c2;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.logo-img {
+height: 40px; /* Adjust size based on design preference */
+width: auto;  /* Ensures proper aspect ratio */
+}
+
+
+/* ---- SIDEBAR STYLING ---- */
+.sidebar {
+  width: 250px;
+  height: 100vh;
+  background: var(--primary-color);
+  padding: 20px;
+  color: var(--text-color);
+  position: fixed;
+}
+
+.sidebar h3 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.sidebar a {
+  display: block;
+  color: var(--text-color);
+  text-decoration: none;
+  padding: 10px;
+  margin-bottom: 5px;
+  border-radius: 5px;
+}
+
+.sidebar a:hover {
+  background: var(--accent-color);
+  color: #fff;
+}
+
+/* ---- DASHBOARD STYLING ---- */
+.dashboard-container {
+  margin-left: 270px;
+  padding: 20px;
+}
+
+.dashboard-card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px var(--shadow);
+  margin-bottom: 20px;
+}
+
+.dashboard-card h4 {
+  color: var(--primary-color);
+}
+
+.dashboard-card p {
+  font-size: 14px;
+  color: #666;
+}
+
+/* ---- BUTTONS ---- */
+.btn-primary {
+  background-color: var(--accent-color);
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn-primary:hover {
+  background-color: #0099cc;
+}
+
+/* ---- FORMS ---- */
+.form-container {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px var(--shadow);
+  max-width: 400px;
+  margin: auto;
+}
+
+.form-container input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.form-container button {
+  width: 100%;
+  background-color: var(--primary-color);
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+.form-container button:hover {
+  background-color: var(--accent-color);
+}
+
+/* ---- FOOTER STYLING ---- */
+.footer {
+  background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+  color: var(--text-color);
+  text-align: center;
+  padding: 15px 0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  box-shadow: 0 -2px 6px var(--shadow);
+  margin-top: 30px;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer p {
+  margin: 0;
+  font-size: 14px;
+}
+
+.footer-links {
+  margin-top: 5px;
+}
+
+.footer-links a {
+  color: var(--accent-color);
+  margin: 0 10px;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+
+.loan-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.loan-card:hover {
+  transform: scale(1.05); /* Slightly zooms in */
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Adds a stronger shadow */
+  background-color: aliceblue;
+}
+
+
+
+   /* ManageLoansDashboard Styles */
+.manage-loans-container {
+margin-top: 50px;
+}
+
+.manage-loans-title {
+text-align: center;
+margin-bottom: 20px;
+font-weight: bold;
+}
+
+.manage-loans-table {
+width: 100%;
+border-collapse: collapse;
+}
+
+.manage-loans-table thead th {
+background-color: #007bff;
+color: white;
+text-align: center;
+}
+
+.manage-loans-table tbody tr:hover {
+background-color: rgba(0, 123, 255, 0.1); /* Light blue hover effect */
+}
+
+.manage-loans-table th,
+.manage-loans-table td {
+text-align: center;
+vertical-align: middle;
+}
+
+.manage-loans-alert {
+text-align: center;
+}
+
+.manage-loans-dropdown {
+width: 100%;
+}
+
+.table-responsive {
+overflow-x: auto;
+}
